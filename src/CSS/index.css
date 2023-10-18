@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    z-index: 1;
+    background-color:rgba(255, 255, 255, 1);
+    border: none;
+    margin-right: 15%;
+}
+
+.nav > h1{
+    padding-left: 1%;
+}
+
+.home-links{
+    display: flex;
+    width: 30%;
+    margin-left: 40%;
+    padding-top: 1%; 
+    justify-content: space-evenly;
+}
+
+.home-links a{
+    color: black;
+    text-decoration: none;
+    
+}
+.home-links a:hover{
+    color: blue;
+    font-size: 14pt;
+    transition-duration: 100ms;
+}
+
+.bg-image{ 
+    height: 120%; 
+    width: 100%;
+    margin-top: -30em;
+}
+
+.home-text{
+    border: none;
+    padding-top: 8px;
+    padding-left: 20px;
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 1);
+    height: 750px;
+    width: 100%;
+    position: relative;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-right: 2em;
+    height: 2em;
+    width: 5em;
+    display: none;
+}
+
+.intro-text-header{
+    background-color: rgb(21, 95, 132); 
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+.community-updates-title{
+    font-weight:bold;
+    font-size: 20pt;
+}
+
+.container{
+    border: none;
+    position: relative;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.tile{
+    border: none;
+    height: 11.5em;
+    width: 45%;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px grey;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.tile:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+}
+
+.tile a{
+    text-decoration: none;
+    color: black;
+}
+
+.tile a:hover{
+    color: blue;
+}
+
+.see-more-arrow{
+    height: 50px;
+    width: 50px;
+}
+
+.footer-1{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color: #005B6F;
+}
+
+.about-us{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100px;
+    border: none;
+    padding-left: 2.5%;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.about-us a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.about-us a:hover{
+    text-decoration: underline;
+}
+
+.about-us-content{
+    font-size: 0.9em;
+}
+
+.contact-us{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100px;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.footer-2{
+    background-color: rgb(17, 45, 80);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    color: ghostwhite;
+}
+
+.link-box{
+    height: 45px;
+    width: 80%;
+    background-color: white;
+    border-radius: 23px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-links{
+    margin-top: 5px;
+    height: 32px;
+    width: 32px;
+}
+
+.copyright{
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 989px) {
+    .nav > h1{
+        margin-top: 1.6em;
+        font-size: 1em;
+        width: 90%;
+    }
+
+    .home-links a{
+        display: none;
+    }
+
+    .bg-image{
+        margin-top: 0.5em;
+    }
+
+    .menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .menu{
+        margin-top: 2em;
+        width: 25em;
+        border: none;
+        margin-right: 2em;
+    }
+
+    .intro-text-header{
+        font-size: 18pt;
+    }
+
+    .home-links{
+        margin-left: 30%;
+    }
+
+    .nav > h1{
+        margin-top: 1.6em;
+        font-size: 1.2em;
+        width: 90em;
+        border: none;
+        padding-left: 1em;
+    }
+
+    .nav > img{
+        display: none;
+    }
+
+    .tile{
+        font-size: 0.8em;
+        height: 12em;
+        width: 70%;
+    }
+    .see-more-arrow{
+        margin-top: -1.5em;
+        height: 5em;
+    }
+
+    .footer-1{
+        display: flex;
+        flex-direction: column;
+        height: 25em;
+    }
+    .about-us{
+        border-bottom: 0.01em solid;
+        width: 100%;
+        height: 13em;
+        padding-left: 2.5%;
+        font-size: 1.2em;
+    }
+
+    .contact-us{
+        margin-left: 0.5em;
+        font-size: 1.2em;
+    }
+
+    .link-box{
+        margin-top: 1em;
+        margin-left: 1em;
+        width: 10em;
+        height: 1.6em;
+ 
+    }
+
+    .social-links{
+        width: 24px;
+        height: 1em;
+        margin-bottom: 20em;
+    }
+}

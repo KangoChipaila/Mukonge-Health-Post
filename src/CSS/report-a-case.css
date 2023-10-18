@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav{
+    top: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    height: fit-content;
+    z-index: 1;
+    background-color:rgba(255, 255, 255, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav > h1{
+    padding-left: 1%;
+}
+
+.home-links{
+    display: flex;
+    width: 30%;
+    margin-left: 40%;
+    padding-top: 1%; 
+    justify-content: space-evenly;
+}
+
+.home-links a{
+    color: black;
+    text-decoration: none;
+}
+.home-links a:hover{
+    color: blue;
+    font-size: 14pt;
+    transition-duration: 100ms;
+}
+
+.page-title-and-image{
+    position: relative;
+    margin-top: 100px;
+    height: 400px;
+    background-image: url(/src/image/JPEG/Report-a-case-image.jpg);
+    background-size: 100%;
+}
+
+.page-title{
+    bottom: -40px;
+    left: 0;
+    position: absolute;
+    font-weight:700;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30pt;
+    background-color: rgb(21, 95, 132);
+    width: 28%;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.container{
+    display: flex;
+    height: 700px;
+    width: 100%;
+} 
+
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 20em;
+
+}
+
+.tile-1{
+    position: relative;
+    background-image: url(/src/image/SVG/plus-large-svgrepo-com.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 250px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.add-image-text{
+    position: absolute;
+    bottom: 0;
+    right: 6em;
+}
+
+.add-image-info{
+    margin-left: 100px;
+    width: 100%;
+    font-size: 0.6em;
+    position: relative;
+    border: none;
+}
+
+.tile-2{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 20em;
+    height: 35em;
+    width: 49.5%;
+    background-color: none;
+    border-radius: 10px;
+    box-shadow: 0.9px 0.9px 3px;
+}
+
+.form-text{
+    margin-left: 3em;
+    margin-top: 1.3em;
+    font-weight: bold;
+    
+}
+
+.form{
+    padding-top: 4em;
+    padding-left: 2em;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    height: 55%;
+    width: 80%;
+    font-weight: 500;
+    color: black;
+    background-color: none;
+}
+
+.input{
+    border: none;
+    border-bottom: 1px solid;
+    width: 20em
+}
+
+.text-box{
+    position: absolute;
+    margin-top: 30px;
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.submit{
+    position: absolute;
+    bottom: -150px;
+    right: -50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    width: 100px;
+    height: 30px;
+}
+
+.footer-1{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color: #005B6F;
+}
+
+.about-us{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100px;
+    border: none;
+    margin-left: 2.5%;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.about-us a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.about-us a:hover{
+    text-decoration: underline;
+}
+
+.about-us-content{
+    font-size: 0.9em;
+}
+
+.contact-us{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.footer-2{
+    background-color: rgb(17, 45, 80);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    color: ghostwhite;
+}
+
+.link-box{
+    height: 45px;
+    width: 80%;
+    background-color: white;
+    border-radius: 23px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-links{
+    margin-top: 5px;
+    height: 32px;
+    width: 32px;
+}
+
+.copyright{
+    font-size: 1.5em;
+    padding: 0.5em;
+}
